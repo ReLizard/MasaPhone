@@ -117,7 +117,7 @@ Se trovi utile **MasaPhone** e desideri supportare lo sviluppo con una birra:
 <div align="center">
 
 <a href="https://paypal.me/ReLizard" target="_blank">
-  <img src="images/beer.png" alt="Offrimi una birra" width="220" />
+  <img src="images/beer.png" alt="Offrimi una birra" width="200" />
 </a>
 
 <p><em>Grazie di cuore per il tuo supporto!</em> 🍻</p>
