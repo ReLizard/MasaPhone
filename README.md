@@ -22,6 +22,33 @@
 
 ---
 
+## 📱 Screenshot dell'App
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="25%">
+        <img src="images/screenshot_1.png" alt="Panoramica Progressioni" width="200" /><br/>
+        <b>Panoramica Slot</b>
+      </td>
+      <td align="center" width="25%">
+        <img src="images/screenshot_2.png" alt="Configurazione Masaniello" width="200" /><br/>
+        <b>Configurazione</b>
+      </td>
+      <td align="center" width="25%">
+        <img src="images/screenshot_3.png" alt="Eventi e Quote" width="200" /><br/>
+        <b>Eventi & Quote</b>
+      </td>
+      <td align="center" width="25%">
+        <img src="images/screenshot_4.png" alt="Bilancio Globale" width="200" /><br/>
+        <b>Bilancio Globale</b>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
 ## ✨ Funzionalità Principali
 
 - ⚙️ **Configurazione Flessibile**:
@@ -83,18 +110,17 @@ L'APK generato sarà disponibile in `app/build/outputs/apk/debug/app-debug.apk`.
 
 ---
 
-## ☕ Supporta il Progetto
+## 🍻 Supporta il Progetto
 
-Se trovi utile **MasaPhone** e desideri supportare lo sviluppo, nuove funzionalità o semplicemente offrirmi un caffè:
+Se trovi utile **MasaPhone** e desideri supportare lo sviluppo con una birra:
 
 <div align="center">
 
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Offrimi%20un%20caffè-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://paypal.me/ReLizard)
-[![Donate with PayPal](https://img.shields.io/badge/Donazione-PayPal%20(@ReLizard)-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/ReLizard)
+<a href="https://paypal.me/ReLizard" target="_blank">
+  <img src="images/beer.png" alt="Offrimi una birra" width="220" />
+</a>
 
-<br/>
-
-*Grazie per il tuo supporto!* ❤️
+<p><em>Grazie di cuore per il tuo supporto!</em> 🍻</p>
 
 </div>
 
