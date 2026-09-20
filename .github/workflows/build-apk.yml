@@ -3,10 +3,16 @@ name: Build & Release APK
 on:
   push:
     branches: [ "main" ]
+    paths-ignore:
+      - 'web/**'
+      - 'README.md'
     tags:
       - 'v*'
   pull_request:
     branches: [ "main" ]
+    paths-ignore:
+      - 'web/**'
+      - 'README.md'
   workflow_dispatch:
 
 permissions:
