@@ -22,7 +22,7 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Brand: Single Unified High-Res Logo Banner (Phone + Text Side-by-Side) */}
         <div className="flex items-center">
           <img
-            src="/masaphone_brand_hd.png"
+            src={`${import.meta.env.BASE_URL}masaphone_brand_hd.png`}
             alt="MasaPhone Money Management"
             className="h-10 sm:h-11 w-auto object-contain transition-transform hover:opacity-95"
           />
