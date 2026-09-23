@@ -67,20 +67,50 @@ Con **MasaPhone Multi-Masaniello** puoi gestire contemporaneamente fino a **6 pr
 
 ## ⚖️ Confronto: Versione Web (PWA) vs Android Nativo
 
-| Caratteristica | 🌐 MasaPhone Web (PWA) | 📱 MasaPhone Android Nativo |
-| :--- | :--- | :--- |
-| **Dispositivi Supportati** | **Tutti** (iOS / iPhone / iPad, Android, macOS, Windows, Linux) | Solo smartphone e tablet **Android 8.0+** |
-| **Installazione** | Istantanea via browser (*Aggiungi a Schermata Home* / PWA) | Download manuale ed installazione file `.apk` |
-| **Funzionamento Offline** | ✅ Sì, 100% offline tramite Service Worker | ✅ Sì, 100% offline nativo |
-| **Aggiornamenti** | ⚡ Immediati e automatici ad ogni ricaricamento | Manuali tramite download del nuovo APK |
-| **Motore Matematico** | `Decimal.js` (30 cifre, arrotondamento `ROUND_HALF_UP`) | `BigDecimal` (30 cifre, arrotondamento `HALF_UP`) |
-| **Precisione Calcoli** | 🎯 Centesimo di euro (100% conforme a Excel) | 🎯 Centesimo di euro (100% conforme a Excel) |
-| **Slot Multi-Masaniello** | 6 Slot indipendenti + Tab Bilancio Globale | 6 Slot indipendenti + Tab Bilancio Globale |
-| **Modifica Quota & Puntata Reale** | ✅ Sì, con ricalcolo dinamico istantaneo | ✅ Sì, con ricalcolo dinamico istantaneo |
-| **Annullamento / Rollback Esito** | ✅ Sì (Pulsante Annulla ultimo esito) | ✅ Sì (Pulsante Reset/Rollback) |
-| **Note per Singolo Evento** | ✅ Sì (Pronostico / note testuali per evento) | In sviluppo |
-| **Backup & Ripristino** | ✅ Esportazione / Importazione JSON con un click | Backup locale database |
-| **Stack Tecnologico** | React 18, TypeScript, TailwindCSS, Vite | Kotlin 2.0, Jetpack Compose, Material 3 |
+> 💡 **In breve**: Entrambe le versioni condividono lo stesso identico motore matematico (30 cifre di precisione, 100% conforme a Excel) e supportano 6 slot Multi-Masaniello con Bilancio Globale. La **Web App** è consigliata per tutti perché è immediata, non occupa memoria e funziona su qualsiasi dispositivo (iOS, Android, PC). L'**App Android** è perfetta per chi desidera il classico file APK installato.
+
+### 📊 Tabella comparativa rapida
+
+| Caratteristica | 🌐 Web (PWA) | 📱 Android |
+| :--- | :---: | :---: |
+| 📱 **Dispositivi** | **Tutti** (iOS, Android, PC) | Solo Android 8+ |
+| ⚡ **Installazione** | Browser / Schermata Home | File `.apk` |
+| 📴 **Offline** | ✅ Sì (100% offline) | ✅ Sì (100% offline) |
+| 🔄 **Aggiornamenti** | ⚡ Automatici | 📥 Manuali (APK) |
+| 🎯 **Precisione** | 100% Excel (30 dec.) | 100% Excel (30 dec.) |
+| 📊 **6 Slot + Bilancio** | ✅ Sì | ✅ Sì |
+| ⚡ **Ricalcolo quote** | ✅ In tempo reale | ✅ In tempo reale |
+| ↩️ **Rollback esiti** | ✅ Sì (Annulla) | ✅ Sì (Reset) |
+| 📝 **Note eventi** | ✅ Sì (Pronostici) | ⏳ In arrivo |
+| 💾 **Backup dati** | ✅ JSON con 1 click | ✅ Database locale |
+| 🛠️ **Tecnologia** | React + TypeScript | Kotlin + Compose |
+
+<br/>
+
+### 🔍 Dettaglio delle due versioni
+
+<details open>
+<summary><b>🌐 MasaPhone Web (Progressive Web App) — <i>Consigliata per tutti</i></b></summary>
+
+- 📱 **Compatibilità universale**: Funziona su iPhone, iPad, smartphone e tablet Android, Mac, Windows e Linux.
+- ⚡ **Accesso istantaneo**: Nessun passaggio da app store. Basta aprire **[relizard.github.io/MasaPhone](https://relizard.github.io/MasaPhone/)** e iniziare a calcolare.
+- 📲 **Esperienza come app nativa**: Con la funzione *"Aggiungi a schermata Home"* del browser, si avvia a schermo intero con icona dedicata.
+- 📴 **Pieno supporto offline**: Grazie al Service Worker, continua a funzionare perfettamente anche senza connessione internet.
+- 🔄 **Sempre aggiornata**: Ogni miglioramento o correzione è subito disponibile senza dover riscaricare nulla.
+- 💾 **Salvataggio & Backup**: Dati salvati in locale nel browser, con possibilità di esportare e importare un file di backup JSON in qualsiasi momento.
+</details>
+
+<br/>
+
+<details open>
+<summary><b>📱 MasaPhone Android Nativo (APK) — <i>Per dispositivi Android</i></b></summary>
+
+- 🤖 **Dedicata ad Android**: Ottimizzata specificamente per smartphone e tablet con Android 8.0+.
+- 📦 **Installazione tradizionale**: Pacchetto `.apk` scaricabile direttamente dalla sezione [Releases](https://github.com/ReLizard/MasaPhone/releases/latest).
+- 📴 **100% Offline nativo**: Funziona totalmente in locale sul dispositivo senza richiedere alcuna connessione di rete.
+- 🔒 **Persistenza sicura**: I dati delle progressioni e lo storico sono conservati nel database locale dell'applicazione.
+- 🎨 **Interfaccia Material 3**: UI moderna sviluppata nativamente con Jetpack Compose.
+</details>
 
 ---
 
