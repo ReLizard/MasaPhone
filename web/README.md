@@ -6,6 +6,12 @@
 
 **Progressive Web App (PWA) reattiva e moderna per la gestione, simulazione e calcolo avanzato delle progressioni Masaniello e Multi-Masaniello su iOS, Android e Desktop.**
 
+<br/>
+
+[![Apri Web App](https://img.shields.io/badge/🌐_Apri_Online-Live_PWA-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://relizard.github.io/MasaPhone/)
+
+<br/>
+
 [![React](https://img.shields.io/badge/React-18-61DAFB.svg?logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.x-646CFF.svg?logo=vite&logoColor=white)](https://vitejs.dev/)

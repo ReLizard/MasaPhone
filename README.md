@@ -1,13 +1,20 @@
 <div align="center">
 
-<img src="images/masaphone_header.png" alt="MasaPhone Money Management" width="480" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/masaphone_header.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/masaphone_banner_hd.png">
+  <img src="images/masaphone_banner_hd.png" alt="MasaPhone Money Management" width="460" />
+</picture>
+
+# 📱 MasaPhone 🌐
+### Il Money Management Masaniello alla portata di tutti
+**Ecosistema multipiattaforma completo: Web App Online (PWA) per qualsiasi dispositivo & Applicazione nativa Android (APK)**
 
 <br/>
 
-**Ecosistema completo per la gestione, simulazione e calcolo avanzato del Money Management Masaniello e Multi-Masaniello.**
-
-[![Web App](https://img.shields.io/badge/Web_App-Live_PWA-38B2AC?style=for-the-badge&logo=pwa&logoColor=white)](https://relizard.github.io/MasaPhone/)
-[![Download APK](https://img.shields.io/badge/Android_APK-v1.0.2-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/ReLizard/MasaPhone/releases/latest)
+[![Web App](https://img.shields.io/badge/🌐_Web_App-Live_PWA-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://relizard.github.io/MasaPhone/)
+&nbsp;
+[![Download APK](https://img.shields.io/badge/📱_Android_APK-v1.0.2-16a34a?style=for-the-badge&logo=android&logoColor=white)](https://github.com/ReLizard/MasaPhone/releases/latest)
 
 <br/>
 
@@ -18,21 +25,43 @@
 
 <br/>
 
-### 🌐 [👉 APRI LA WEB APP ONLINE (PWA)](https://relizard.github.io/MasaPhone/) &nbsp;•&nbsp; 📥 [SCARICA L'APK ANDROID](https://github.com/ReLizard/MasaPhone/releases/latest)
+---
+
+### 🚀 Scegli come utilizzare MasaPhone
+
+| 🌐 Versione Web (PWA) | 📱 Versione Android (APK) |
+| :---: | :---: |
+| 🍏 **iPhone / iPad**, 🤖 **Android**, 💻 **PC / Mac** | 🤖 **Smartphone & Tablet Android** |
+| ⚡ Subito pronta nel browser, zero installazione | 📦 Pacchetto `.apk` installabile offline |
+| 📱 Salvabile su Home con supporto offline | 🔒 Massima integrazione nativa |
+| [👉 **APRI LA WEB APP ONLINE**](https://relizard.github.io/MasaPhone/) | [📥 **SCARICA L'APK ANDROID**](https://github.com/ReLizard/MasaPhone/releases/latest) |
 
 ---
 
 </div>
 
-## 📖 Panoramica
+## 📖 Cos'è MasaPhone?
 
-**MasaPhone** è una suite moderna e reattiva ideata per gestire con precisione matematica il sistema di money management **Masaniello** e **Multi-Masaniello**.
+**MasaPhone** è una suite moderna e intuitiva nata per portare il celebre metodo matematico di money management **Masaniello** e **Multi-Masaniello** sui dispositivi di oggi, mandando definitivamente in pensione i vecchi fogli Excel complessi da usare sullo smartphone.
 
-Il progetto è disponibile in due modalità integrate:
-1. **🌐 Web App (Progressive Web App - PWA)**: Utilizzabile istantaneamente via browser su **qualsiasi piattaforma** (iPhone/iPad/iOS, Android, macOS, Windows, Linux) e installabile sulla schermata Home come una vera app nativa con supporto offline completo.
-2. **📱 Applicazione Android Nativa**: Pacchetto APK sviluppato in **Kotlin & Jetpack Compose** con persistenza locale integrata.
+Il progetto è disponibile in **due modalità complementari**:
+1. **🌐 Web App (Progressive Web App - PWA)**: Funziona all'istante aprendo il link nel browser su **qualsiasi dispositivo** (iPhone, iPad, smartphone Android, PC Windows, Mac o Linux). Si può aggiungere con un tocco alla schermata Home per aprirla come una vera e propria app nativa, con funzionamento garantito anche **offline** (senza connessione internet).
+2. **📱 Applicazione Nativa Android**: Pacchetto `.apk` sviluppato specificamente per Android in **Kotlin e Jetpack Compose**, con database locale e interfaccia Material Design 3.
 
-Entrambe le versioni condividono la stessa logica di calcolo ad altissima precisione (30 cifre decimali) corrispondente al 100% ai modelli matematici ufficiali.
+Entrambe le versioni condividono la stessa logica di calcolo matematico ad altissima precisione (30 cifre decimali), garantendo una corrispondenza al centesimo di euro (100%) con le formule e i fogli di calcolo originali.
+
+---
+
+## 💡 Che cos'è il sistema Masaniello?
+
+Il **Masaniello** è una delle tecniche di gestione del capitale (*money management*) più note ed efficaci nel betting e nel trading a quota fissa.
+
+A differenza delle scommesse a puntata fissa o dei pericolosi sistemi a raddoppio (martingala):
+- **Stabilisci il tuo obiettivo**: imposti la tua cassa di partenza, quanti eventi totali giocare ($N$) e quanti ritieni di poterne vincere ($K$) a una determinata quota.
+- **Calcolo matematico dinamico**: il Masaniello calcola scientificamente l'importo esatto da scommettere su ogni singolo passo per raggiungere l'utile desiderato, rimodulando le puntate successive sia in caso di vincita sia in caso di errore.
+- **Protezione della cassa**: se si verificano gli eventi attesi, il profitto è matematicamente garantito, proteggendo il bankroll da perdite incontrollate.
+
+Con **MasaPhone Multi-Masaniello** puoi gestire contemporaneamente fino a **6 progressioni indipendenti** (Slot) e monitorare in tempo reale il **Bilancio Globale** aggregato con cassa totale, utile netto e ROI percentuale.
 
 ---
 
@@ -57,45 +86,27 @@ Entrambe le versioni condividono la stessa logica di calcolo ad altissima precis
 
 ## 📸 Anteprime & Screenshot
 
-### 🌐 Versione Web (PWA & Desktop)
+### 🌐 1. Versione Web App (PWA & Desktop)
+
+#### 💻 Visualizzazione Desktop / Tablet
 <div align="center">
-  <table>
-    <tr>
-      <td align="center" width="33%">
-        <img src="images/screenshot_web_mobile.png" alt="MasaPhone Web Mobile" width="220" /><br/>
-        <b>📱 Web Mobile (Progressione)</b>
-      </td>
-      <td align="center" width="33%">
-        <img src="images/screenshot_web_balance.png" alt="MasaPhone Web Bilancio" width="220" /><br/>
-        <b>📊 Web Mobile (Bilancio Globale)</b>
-      </td>
-      <td align="center" width="34%">
-        <img src="images/screenshot_web_desktop.png" alt="MasaPhone Web Desktop" width="360" /><br/>
-        <b>💻 Web Desktop / Tablet</b>
-      </td>
-    </tr>
-  </table>
+  <img src="images/screenshot_web_desktop.png" alt="MasaPhone Web Desktop" width="720" />
+  <p><sub><em>Interfaccia Web su Desktop / Tablet con gestione completa degli slot e panoramica rapida</em></sub></p>
 </div>
 
-### 📱 Versione Android Nativa (APK)
+<br/>
+
+#### 📱 Visualizzazione Smartphone (PWA Mobile)
 <div align="center">
   <table>
     <tr>
-      <td align="center" width="25%">
-        <img src="images/screenshot_1.png" alt="Panoramica Progressioni" width="200" /><br/>
-        <b>Panoramica Slot</b>
+      <td align="center" width="50%">
+        <img src="images/screenshot_web_mobile.png" alt="MasaPhone Web Mobile Progressione" width="165" /><br/>
+        <sub><b>📱 Dettaglio Slot & Progressione</b></sub>
       </td>
-      <td align="center" width="25%">
-        <img src="images/screenshot_2.png" alt="Configurazione Masaniello" width="200" /><br/>
-        <b>Configurazione</b>
-      </td>
-      <td align="center" width="25%">
-        <img src="images/screenshot_3.png" alt="Eventi e Quote" width="200" /><br/>
-        <b>Eventi & Quote</b>
-      </td>
-      <td align="center" width="25%">
-        <img src="images/screenshot_4.png" alt="Bilancio Globale" width="200" /><br/>
-        <b>Bilancio Globale</b>
+      <td align="center" width="50%">
+        <img src="images/screenshot_web_balance.png" alt="MasaPhone Web Bilancio" width="165" /><br/>
+        <sub><b>📊 Bilancio Globale Multi-Masa</b></sub>
       </td>
     </tr>
   </table>
@@ -103,34 +114,63 @@ Entrambe le versioni condividono la stessa logica di calcolo ad altissima precis
 
 ---
 
-## 📲 Come Installare la Versione Web su Smartphone e Computer
+### 📱 2. Versione Android Nativa (APK)
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <img src="images/screenshot_1.png" alt="Panoramica Progressioni" width="165" /><br/>
+        <sub><b>1️⃣ Panoramica dei 6 Slot</b></sub>
+      </td>
+      <td align="center" width="50%">
+        <img src="images/screenshot_2.png" alt="Configurazione Masaniello" width="165" /><br/>
+        <sub><b>2️⃣ Configurazione Parametri</b></sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%">
+        <img src="images/screenshot_3.png" alt="Eventi e Quote" width="165" /><br/>
+        <sub><b>3️⃣ Registrazione Eventi & Quote</b></sub>
+      </td>
+      <td align="center" width="50%">
+        <img src="images/screenshot_4.png" alt="Bilancio Globale" width="165" /><br/>
+        <sub><b>4️⃣ Bilancio Globale e ROI</b></sub>
+      </td>
+    </tr>
+  </table>
+</div>
 
-La versione Web è una **Progressive Web App (PWA)**: puoi usarla sia dal browser che installarla come app autonoma senza passare dagli store.
+---
 
-### 🍏 Su iPhone / iPad (iOS Safari)
-1. Apri **[relizard.github.io/MasaPhone](https://relizard.github.io/MasaPhone/)** in **Safari**.
-2. Tocca l'icona di **Condivisione** (il quadrato con la freccia rivolta verso l'alto in basso).
-3. Scorri l'elenco delle opzioni e tocca **"Aggiungi alla schermata Home"**.
-4. Tocca **Aggiungi** in alto a destra: l'icona MasaPhone apparirà nella schermata Home del tuo iPhone/iPad e si aprirà a schermo intero come una normale app nativa.
+## 📲 Come Installare la Versione Web (Consigliata)
+
+La versione Web è una **Progressive Web App (PWA)**: non devi scaricarla da alcuno store, non occupa spazio sul telefono e puoi installarla con un click per usarla anche senza connessione internet.
+
+### 🍏 Su iPhone e iPad (Safari)
+1. Apri il link **[relizard.github.io/MasaPhone](https://relizard.github.io/MasaPhone/)** in **Safari**.
+2. Tocca in basso il pulsante di **Condivisione** (l'icona del quadrato con la freccia rivolta verso l'alto).
+3. Scorri il menu e seleziona **"Aggiungi alla schermata Home"**.
+4. Tocca **Aggiungi** in alto a destra: l'icona ufficiale di MasaPhone comparirà tra le tue app e si aprirà a schermo intero senza barre del browser.
 
 ### 🤖 Su Smartphone e Tablet Android (Chrome)
-1. Apri **[relizard.github.io/MasaPhone](https://relizard.github.io/MasaPhone/)** in **Google Chrome**.
-2. Tocca l'icona dei tre puntini in alto a destra.
-3. Seleziona **"Installa app"** o **"Aggiungi a schermata Home"**.
+1. Apri il link **[relizard.github.io/MasaPhone](https://relizard.github.io/MasaPhone/)** in **Google Chrome**.
+2. Tocca l'icona con i **tre puntini** in alto a destra.
+3. Seleziona **"Installa app"** (oppure **"Aggiungi a schermata Home"**).
+4. Conferma: l'app verrà integrata nel tuo cassetto app come una qualsiasi applicazione nativa.
 
-### 💻 Su PC / Mac / Linux (Chrome, Edge, Safari)
-1. Apri la pagina nel browser.
-2. Clicca sull'icona **"Installa MasaPhone"** (o l'icona computer/più) situata a destra nella barra degli indirizzi.
-3. L'app si aprirà in una finestra dedicata e sarà avviabile dal menu Start, Spotlight o Launchpad.
+### 💻 Su Computer PC Windows, Mac o Linux (Chrome, Edge, Safari)
+1. Apri la pagina nel tuo browser preferito.
+2. Clicca sull'icona di **installazione** (l'icona del monitor o del pulsante `+`) situata all'estremità destra della barra degli indirizzi.
+3. Clicca **Installa**: MasaPhone si aprirà in una finestra autonoma, avviabile comodamente da Desktop, menu Start o Launchpad.
 
 ---
 
-## 📥 Download APK Android Nativo
+## 📥 Download App Android Nativa (APK)
 
-Se preferisci l'applicazione Android nativa:
+Se possiedi un dispositivo Android e preferisci installare direttamente il pacchetto nativo:
 1. Accedi alla sezione [**Releases**](https://github.com/ReLizard/MasaPhone/releases/latest).
 2. Scarica il file `app-debug.apk` (o `MasaPhone.apk`).
-3. Avvia il file scaricato sul dispositivo Android e autorizza l'installazione da origini sconosciute se richiesto.
+3. Apri il file scaricato sul dispositivo Android e conferma l'installazione (autorizzando l'installazione da origini sconosciute se richiesto dalle impostazioni di sistema).
 
 ---
 
@@ -139,13 +179,13 @@ Se preferisci l'applicazione Android nativa:
 ```
 MasaPhone/
 ├── app/                        # Applicazione nativa Android (Kotlin / Jetpack Compose)
-│   ├── src/main/java/          # Sorgenti Kotlin (UI, ViewModel, Engine)
+│   ├── src/main/kotlin/        # Sorgenti Kotlin (UI, ViewModel, Masaniello Engine)
 │   └── src/main/res/           # Risorse grafiche, icone e layout Android
 ├── web/                        # Web App PWA (React 18 / TypeScript / Vite / Tailwind)
 │   ├── src/core/               # Motore matematico Decimal.js e gestione Storage
 │   ├── src/components/         # Componenti UI (Progression, Balance, Config, Modals)
 │   └── public/                 # Icone PWA, apple-touch-icon, manifest
-├── images/                     # Screenshot e asset grafici del progetto
+├── images/                     # Screenshot, anteprime e grafiche per il README
 └── .github/workflows/
     ├── build-apk.yml           # CI/CD: Compilazione automatica dell'APK Android
     └── deploy-pages.yml        # CI/CD: Deploy automatico della Web App su GitHub Pages
@@ -159,8 +199,8 @@ MasaPhone/
 ```bash
 cd web
 npm install
-npm run dev        # Avvia il server di sviluppo su http://localhost:5173
-npm run build      # Compila la build di produzione in web/dist/
+npm run dev        # Avvia il server di sviluppo locale su http://localhost:5173
+npm run build      # Genera la build ottimizzata in web/dist/
 ```
 
 ### 📱 Sviluppo Android
@@ -173,7 +213,7 @@ npm run build      # Compila la build di produzione in web/dist/
 
 ## 🍻 Supporta il Progetto
 
-Se trovi utile **MasaPhone** e desideri supportare lo sviluppo con una birra:
+Se trovi utile **MasaPhone** e desideri supportarne lo sviluppo o offrire un caffè:
 
 <div align="center">
 
@@ -190,4 +230,4 @@ Se trovi utile **MasaPhone** e desideri supportare lo sviluppo con una birra:
 ## 📄 Autore & Licenza
 
 Sviluppato con passione da **[@ReLizard](https://github.com/ReLizard)**.  
-Rilasciato sotto licenza MIT.
+Rilasciato con licenza open source [MIT](LICENSE).
