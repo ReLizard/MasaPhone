@@ -20,8 +20,8 @@ export const ConfigModal: React.FC<ConfigModalProps> = ({
 }) => {
   const [name, setName] = useState(slot.name || `Masa ${slotIndex + 1}`);
   const [bankroll, setBankroll] = useState(slot.initialBankroll || "35.00");
-  const [totalEvents, setTotalEvents] = useState(slot.totalEvents || 10);
-  const [targetWins, setTargetWins] = useState(slot.targetWins || 7);
+  const [totalEvents, setTotalEvents] = useState(String(slot.totalEvents || 10));
+  const [targetWins, setTargetWins] = useState(String(slot.targetWins || 7));
   const [defaultOdd, setDefaultOdd] = useState(slot.odds[0] || "2.00");
   const [oddsMode] = useState<'uniform' | 'custom'>('uniform');
   const [customOdds, setCustomOdds] = useState<string[]>([...slot.odds]);
@@ -29,8 +29,8 @@ export const ConfigModal: React.FC<ConfigModalProps> = ({
   useEffect(() => {
     setName(slot.name || `Masa ${slotIndex + 1}`);
     setBankroll(slot.initialBankroll || "35.00");
-    setTotalEvents(slot.totalEvents || 10);
-    setTargetWins(slot.targetWins || 7);
+    setTotalEvents(String(slot.totalEvents || 10));
+    setTargetWins(String(slot.targetWins || 7));
     setDefaultOdd(slot.odds[0] || "2.00");
     setCustomOdds([...slot.odds]);
   }, [slot, slotIndex, isOpen]);
@@ -49,18 +49,21 @@ export const ConfigModal: React.FC<ConfigModalProps> = ({
 
   try {
     const numBankroll = parseFloat(bankroll);
+    const numTotal = parseInt(totalEvents, 10);
+    const numWins = parseInt(targetWins, 10);
+
     if (isNaN(numBankroll) || numBankroll <= 0) {
       preview.errorMessage = 'Inserisci una cassa iniziale valida (> 0)';
-    } else if (targetWins <= 0 || targetWins > totalEvents) {
+    } else if (isNaN(numTotal) || numTotal < 1 || numTotal > 100) {
+      preview.errorMessage = 'Eventi totali deve essere compreso tra 1 e 100';
+    } else if (isNaN(numWins) || numWins <= 0 || numWins > numTotal) {
       preview.errorMessage = 'Eventi attesi deve essere compreso tra 1 e Eventi Totali';
-    } else if (totalEvents < 1 || totalEvents > 100) {
-      preview.errorMessage = 'Eventi totali deve essere tra 1 e 100';
     } else {
       const oddsList = oddsMode === 'uniform' 
-        ? Array(totalEvents).fill(defaultOdd) 
-        : customOdds.slice(0, totalEvents).map(q => q || defaultOdd);
+        ? Array(numTotal).fill(defaultOdd) 
+        : customOdds.slice(0, numTotal).map(q => q || defaultOdd);
 
-      const engine = new MasanielloEngine(bankroll, totalEvents, targetWins, oddsList);
+      const engine = new MasanielloEngine(bankroll, numTotal, numWins, oddsList);
       preview.finalBankroll = engine.potentialFinalBankroll().toFixed(2);
       preview.netProfit = engine.potentialNetProfit().toFixed(2);
       preview.yieldPct = engine.potentialYieldPercent().toFixed(2);
@@ -81,6 +84,9 @@ export const ConfigModal: React.FC<ConfigModalProps> = ({
   const handleSave = () => {
     if (!preview.isValid) return;
 
+    const numTotal = parseInt(totalEvents, 10);
+    const numWins = parseInt(targetWins, 10);
+
     const finalOdds = oddsMode === 'uniform'
       ? Array(100).fill(defaultOdd)
       : Array.from({ length: 100 }, (_, i) => customOdds[i] || defaultOdd);
@@ -90,8 +96,8 @@ export const ConfigModal: React.FC<ConfigModalProps> = ({
       name: name.trim() || `Masa ${slotIndex + 1}`,
       isConfigured: true,
       initialBankroll: new Decimal(bankroll).toFixed(2),
-      totalEvents,
-      targetWins,
+      totalEvents: numTotal,
+      targetWins: numWins,
       odds: finalOdds,
       results: [],
       actualStakes: [],
@@ -169,11 +175,8 @@ export const ConfigModal: React.FC<ConfigModalProps> = ({
                 min="1"
                 max="100"
                 value={totalEvents}
-                onChange={(e) => {
-                  const val = parseInt(e.target.value) || 1;
-                  setTotalEvents(val);
-                  if (targetWins > val) setTargetWins(val);
-                }}
+                onChange={(e) => setTotalEvents(e.target.value)}
+                placeholder="10"
                 className="w-full bg-[#121212] border border-[#333333] rounded-xl px-3.5 py-2.5 text-sm font-semibold text-white focus:outline-none focus:border-sky-500 transition-colors"
               />
             </div>
@@ -184,9 +187,10 @@ export const ConfigModal: React.FC<ConfigModalProps> = ({
               <input
                 type="number"
                 min="1"
-                max={totalEvents}
+                max={parseInt(totalEvents, 10) || 100}
                 value={targetWins}
-                onChange={(e) => setTargetWins(parseInt(e.target.value) || 1)}
+                onChange={(e) => setTargetWins(e.target.value)}
+                placeholder="7"
                 className="w-full bg-[#121212] border border-[#333333] rounded-xl px-3.5 py-2.5 text-sm font-semibold text-emerald-400 focus:outline-none focus:border-emerald-500 transition-colors"
               />
             </div>

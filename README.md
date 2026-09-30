@@ -12,7 +12,7 @@
 
 <br/>
 
-[![Web App](https://img.shields.io/badge/🌐_Web_App-Live_PWA-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://relizard.github.io/MasaPhone/)
+[![Web App](https://img.shields.io/badge/🌐_Web_App-Live_PWA_v1.0.3-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://relizard.github.io/MasaPhone/)
 &nbsp;
 [![Download APK](https://img.shields.io/badge/📱_Android_APK-v1.0.2-16a34a?style=for-the-badge&logo=android&logoColor=white)](https://github.com/ReLizard/MasaPhone/releases/latest)
 
@@ -20,7 +20,7 @@
 
 [![Build & Release APK](https://github.com/ReLizard/MasaPhone/actions/workflows/build-apk.yml/badge.svg)](https://github.com/ReLizard/MasaPhone/actions/workflows/build-apk.yml)
 [![Deploy Web App](https://github.com/ReLizard/MasaPhone/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/ReLizard/MasaPhone/actions/workflows/deploy-pages.yml)
-[![Version](https://img.shields.io/badge/Version-1.0.2-brightgreen.svg)](https://github.com/ReLizard/MasaPhone/releases)
+[![Version](https://img.shields.io/badge/Version-1.0.3-brightgreen.svg)](https://github.com/ReLizard/MasaPhone/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 <br/>

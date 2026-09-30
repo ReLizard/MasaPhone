@@ -13,9 +13,12 @@ export const InfoModal: React.FC<InfoModalProps> = ({ isOpen, onClose }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
       <div className="bg-[#1c1c1c] border border-[#333333] w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
         <div className="flex items-center justify-between px-5 py-4 border-b border-[#2b2b2b] bg-[#222222]">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2.5">
             <BookOpen className="w-5 h-5 text-sky-400" />
-            <h2 className="text-base font-bold text-white">MasaPhone - Guida & Info</h2>
+            <div>
+              <h2 className="text-base font-bold text-white">MasaPhone - Guida & Info</h2>
+              <span className="text-[11px] text-sky-400 font-mono font-semibold">Web App v1.0.3</span>
+            </div>
           </div>
           <button
             onClick={onClose}
@@ -71,7 +74,8 @@ export const InfoModal: React.FC<InfoModalProps> = ({ isOpen, onClose }) => {
           </div>
         </div>
 
-        <div className="p-4 border-t border-[#2b2b2b] bg-[#202020] text-center">
+        <div className="p-4 border-t border-[#2b2b2b] bg-[#202020] text-center space-y-2">
+          <p className="text-[11px] text-gray-400 font-mono">MasaPhone Web v1.0.3 • PWA Offline Ready</p>
           <button
             onClick={onClose}
             className="w-full py-2 bg-sky-500 hover:bg-sky-400 text-white font-bold text-xs rounded-xl transition-all shadow-lg shadow-sky-500/20"

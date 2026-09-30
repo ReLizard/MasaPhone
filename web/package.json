@@ -1,7 +1,7 @@
 {
   "name": "masaphone-web",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.3",
   "type": "module",
   "scripts": {
     "dev": "NODE_OPTIONS='-r ./crypto-polyfill.cjs' vite",
